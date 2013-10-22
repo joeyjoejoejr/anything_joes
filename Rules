@@ -20,6 +20,15 @@ compile '/assets/stylesheets/*' do
   filter :sass, Compass.sass_engine_options
 end
 
+compile '/assets/javascripts/*' do
+  filter :coffeescript
+end
+
+compile '/posts/*' do
+  filter :kramdown, enable_coderay: false
+  layout 'default'
+end
+
 compile '*' do
   if item.binary?
     # don’t filter binary items
@@ -29,8 +38,18 @@ compile '*' do
   end
 end
 
+route '/assets/javascripts/*' do
+  "/javascripts/#{File.basename(item.attributes[:filename], ".coffee")}.js"
+end
+
 route '/assets/stylesheets/*' do
   "/stylesheets/#{File.basename(item.attributes[:filename], ".scss")}.css"
+end
+
+route '/posts/*' do
+  slug = item[:title].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, "")
+
+  "/#{item[:category] || item[:kind]}/#{slug}/index.html"
 end
 
 route '*' do

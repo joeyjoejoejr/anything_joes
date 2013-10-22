@@ -2,37 +2,69 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>A Brand New nanoc Site - Home</title>
+    <title>Anything Joes - Home</title>
     <link href="/stylesheets/style.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="http://yandex.st/highlightjs/7.3/styles/default.min.css">
 
     <!-- you don't need to keep this, but it's cool for stats! -->
     <meta name="generator" content="nanoc 3.6.5"> 
   </head>
   <body>
+    <div id="header">
+      <h1 id="logo">Anything Joes</h1>
+    </div>
+    <aside id="sidebar">
+  <h2>Recent Posts</h2>
+  <ul>
+    
+      <li><a href="/article/my-first-post/">My first post</a></li>
+    
+      <li><a href="/monkey/you-are-teh-awesome/">You Are Teh Awesome</a></li>
+    
+  </ul>
+</aside>
+
     <div id="main">
-      <h1>A Brand New nanoc Site</h1>
+      
+  <div class='post'>
+    <h1><a href="/article/my-first-post/">My first post</a></h1>
+    <aside>
+      Posted at: <time class="timeago" datetime="2012-02-10 04:00:00 -0500"></time>
+    </aside>
 
-<p>You’ve just created a new nanoc site. The page you are looking at right now is the home page for your site. To get started, consider replacing this default homepage with your own customized homepage. Some pointers on how to do so:</p>
+    <article>
+    <p>Welcome to my blog. It is filled with wondrous, bloggy things. Cats, mostly.</p>
 
-<ul>
-  <li><p><strong>Change this page’s content</strong> by editing the “index.html” file in the “content” directory. This is the actual page content, and therefore doesn’t include the header, sidebar or style information (those are part of the layout).</p></li>
-  <li><p><strong>Change the layout</strong>, which is the “default.html” file in the “layouts” directory, and create something unique (and hopefully less bland).</p></li>
-</ul>
+    </article>
+  </div>
 
-<p>If you need any help with customizing your nanoc web site, be sure to check out the documentation (see sidebar), and be sure to subscribe to the discussion group (also see sidebar). Enjoy!</p>
+  <div class='post'>
+    <h1><a href="/monkey/you-are-teh-awesome/">You Are Teh Awesome</a></h1>
+    <aside>
+      Posted at: <time class="timeago" datetime="2012-02-10 04:00:00 -0500"></time>
+    </aside>
+
+    <article>
+    <h2 id="woman">Woman</h2>
+
+<h3 id="wo-man">Wo Man</h3>
+
+<p><em>foo bar</em></p>
+
+<pre><code class="language-ruby">def foo
+  "Woot"
+end
+</code></pre>
+
+    </article>
+  </div>
+
     </div>
-    <div id="sidebar">
-      <h2>Documentation</h2>
-      <ul>
-        <li><a href="http://nanoc.ws/docs/">Documentation</a></li>
-        <li><a href="http://nanoc.ws/docs/tutorial/">Getting Started</a></li>
-      </ul>
-      <h2>Community</h2>
-      <ul>
-        <li><a href="http://groups.google.com/group/nanoc/">Discussion Group</a></li>
-        <li><a href="irc://chat.freenode.net/#nanoc">IRC Channel</a></li>
-        <li><a href="http://github.com/nanoc/nanoc/wiki/">Wiki</a></li>
-      </ul>
-    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://timeago.yarp.com/jquery.timeago.js"></script>
+    <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <script src="javascripts/default.js"></script>
   </body>
 </html>

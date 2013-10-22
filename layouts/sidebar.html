@@ -1,0 +1,8 @@
+<aside id="sidebar">
+  <h2>Recent Posts</h2>
+  <ul>
+    <% sorted_articles.take(5).each do |post| %>
+      <li><%= link_to post[:title], post.path %></li>
+    <% end %>
+  </ul>
+</aside>

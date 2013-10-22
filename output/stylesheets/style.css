@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Rammetto+One);
 /* line 17, /Users/joe/.gem/ruby/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -61,4 +62,136 @@ a img {
 /* line 116, /Users/joe/.gem/ruby/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
+}
+
+/* line 61, /Users/joe/.gem/ruby/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+* html {
+  font-size: 100%;
+}
+
+/* line 64, /Users/joe/.gem/ruby/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+/* line 45, content/assets/stylesheets/style.scss */
+body {
+  background: #fefcfa;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* line 51, content/assets/stylesheets/style.scss */
+h1, h2, h3, h4 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+}
+
+/* line 56, content/assets/stylesheets/style.scss */
+h1 {
+  font-size: 2.5em;
+  line-height: 1.2em;
+  margin-bottom: 0.6em;
+}
+
+/* line 62, content/assets/stylesheets/style.scss */
+p {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+/* line 67, content/assets/stylesheets/style.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 71, content/assets/stylesheets/style.scss */
+em {
+  font-style: italic;
+}
+
+/* line 75, content/assets/stylesheets/style.scss */
+a {
+  text-decoration: none;
+  color: #f6a662;
+}
+/* line 78, content/assets/stylesheets/style.scss */
+a:hover {
+  text-decoration: underline;
+}
+/* line 79, content/assets/stylesheets/style.scss */
+a:visited {
+  color: #9a683d;
+}
+
+/* line 82, content/assets/stylesheets/style.scss */
+pre {
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  overflow-x: auto;
+}
+
+/* line 90, content/assets/stylesheets/style.scss */
+body {
+  *zoom: 1;
+  max-width: 34em;
+  _width: 34em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 38, /Users/joe/.gem/ruby/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+body:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (min-width: 59em) {
+  /* line 90, content/assets/stylesheets/style.scss */
+  body {
+    max-width: 59em;
+  }
+}
+/* line 93, content/assets/stylesheets/style.scss */
+body #header {
+  border-top: 3px solid #7b3b04;
+}
+/* line 95, content/assets/stylesheets/style.scss */
+body #header h1#logo {
+  padding-left: 16.94915%;
+  font-size: 3.5em;
+  line-height: 1.28571em;
+  margin-top: 0.15em;
+  color: #622f03;
+  font-family: 'Rammetto One', cursive;
+  letter-spacing: -4px;
+  text-shadow: 0px 3px 0px black, 0px 6px 10px rgba(0, 0, 0, 0.15), 0px 10px 2px rgba(0, 0, 0, 0.1), 0px 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 59em) {
+  /* line 108, content/assets/stylesheets/style.scss */
+  #header {
+    width: 100%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+
+  /* line 109, content/assets/stylesheets/style.scss */
+  #sidebar {
+    width: 15.25424%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-top: 1.5em;
+  }
+
+  /* line 113, content/assets/stylesheets/style.scss */
+  #main {
+    width: 83.05085%;
+    float: right;
+    margin-right: 0;
+  }
 }
